@@ -1,0 +1,9 @@
+# System
+**/.DS_Store
+.vscode/
+
+# Python
+**/__pycache__/
+
+# Data
+/helldivers_wiki_vault/
