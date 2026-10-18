@@ -13,8 +13,11 @@ Description: A lightweight python script for downloading and archiving the entir
 ### Notes
 
  - Current storage requirements for helldivers wiki is 20 GB.
+     - Most of the storage comes from the `/helldivers_wiki_vault/media/` folder (~19 GB).
+     - Running the `png_webp_convert.py` will take the `.png` images from `/helldivers_wiki_vault/media/` and convert them into `webp` (lossless version). This will reduce the strain from 19 GB to 13 GB but requires all image sources in the markdown files to re-route to `/helldivers_wiki_vault/media_webp/`. 
 
 
 ### TODO
 
  - Have SHA based hashing to check for updates to pages. May need to include some metadata tracker to keep track of most recent sha of each page (not markdown since the format conversion wont match hashes).
+ - Rework the image conversion/compression so that everything is in the `download.py` script and add args to allow either use of `webp` or `png` and keep everything in the same `media` folder.

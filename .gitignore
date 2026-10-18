@@ -1,6 +1,7 @@
 # System
 **/.DS_Store
 .vscode/
+.obsidian/
 
 # Python
 **/__pycache__/
